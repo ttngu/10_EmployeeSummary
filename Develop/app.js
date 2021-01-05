@@ -79,11 +79,21 @@ const questions = [
 
 // Functions to create the team
 async function createTeam() {
+    const data = await inquirer
+        .prompt(questions)
+        
+    // Push Manager info to array
+    if (data.managerName) {
+        let newManager = new Manager(data.managerName, data.managerID, data.managerEmail, data.officeNumber);
+        employeeArray.push(newManager);
+    }
+    
+
+
+
+
 
 }
-
-
-
 
 createTeam();
 
