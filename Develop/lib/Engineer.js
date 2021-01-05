@@ -15,8 +15,10 @@ class Engineer extends Employee {
     }
 
     getRole() {
-        return "Engineer";
+        return this.title;
     }
 }
+
+const x = new Engineer("blah", 1, "blah@blah", "");
 
 module.exports = Engineer;
