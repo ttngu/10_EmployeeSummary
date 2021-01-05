@@ -19,13 +19,16 @@ const when2 = (data) => !!data.managerName || (employeeArray.length > 0)
 
 // Create Questions
 
-const questions = [{
-    type: "input",
-    message: "Hello. You are a manager. What is your name?",
-    name: "managerName",
-    when: (data) => !data.managerName && employeeArray.length < 1
+const questions = [
+    {
+        type: "input",
+        message: "Hello. You are a manager. What is your name?",
+        name: "managerName",
+        when: (data) => !data.managerName && employeeArray.length < 1
     },
-    {}
+    {
+        
+    }
 ]
 
 // Write code to use inquirer to gather information about the development team members,
