@@ -40,7 +40,7 @@ const questions = [
     },
     {
         type: "list",
-        message: "Who wuld you like to add?",
+        message: "Who would you like to add?",
         name: "newMember",
         choices: ["Engineer", "Intern", "None"],
         when: (data) => !!data.managerName || employeeArray.length > 0
@@ -99,7 +99,7 @@ async function createTeam() {
         employeeArray.push(newIntern);
         return createTeam();
 
-     } else {
+     } else if (data.newMember === "None"){
         const teamHTML = render(employeeArray);
         fs.writeFile(outputPath, teamHTML, function(error) {
             if (error) throw error;
