@@ -67,7 +67,13 @@ const questions = [
         type: "input",
         message: "What is the employee's Github?",
         name: "engineerGithub",
-        when: (data) => data.newMember === "Engineer" && secondWhen(data)
+        when: (data) => data.newMember === "Engineer" && when2(data)
+    },
+    {
+        type: "input",
+        message: "What is the name of the intern's school?",
+        name: "internSchool",
+        when: (data) => data.newMember === "Intern" && when1(data)
     },
 ]
 
