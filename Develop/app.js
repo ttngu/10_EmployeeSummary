@@ -93,18 +93,19 @@ async function createTeam() {
         let newEngineer = new Engineer(data.employeeName, data.employeeID, data.employeeEmail, data.engineerGithub)
         employeeArray.push(newEngineer);
         return createTeam();
+        
      } else if (data.newMember === "Intern") {
         let newIntern = new Intern(data.employeeName, data.employeeID, data.employeeEmail, data.internSchool)
         employeeArray.push(newIntern);
         return createTeam();
-     }
 
-
-    
-
-
-
-
+     } else {
+        const teamHTML = render(employeeArray);
+        fs.writeFile(outputPath, teamHTML, function(error) {
+            if (error) throw error;
+            console.log("done and done!");
+        });
+    }
 
 }
 
