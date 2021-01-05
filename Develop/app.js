@@ -9,9 +9,13 @@ const OUTPUT_DIR = path.resolve(__dirname, "output");
 const outputPath = path.join(OUTPUT_DIR, "team.html");
 
 const render = require("./lib/htmlRenderer");
+const Employee = require("./lib/Employee");
 
 // Array of all employees
-let emplyeeArray = [];
+let employeeArray = [];
+const when1 = (data) => !!data.managerName && employeeArray.length < 1;
+const when2 = (data) => !!data.managerName || (employeeArray.length > 0)
+
 
 // Create Questions
 
