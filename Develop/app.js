@@ -27,8 +27,24 @@ const questions = [
         when: (data) => !data.managerName && employeeArray.length < 1
     },
     {
-        
-    }
+        type: "input",
+        message: "What is your employee ID?",
+        name: "managerID",
+        when: when1
+    },
+    {
+        type: "input",
+        message: "What is your office number?",
+        name: "officeNumber",
+        when: when1
+    },
+    {
+        type: "list",
+        message: "Who wuld you like to add?",
+        name: "newMember",
+        choices: ["Engineer", "Intern", "None"],
+        when: (data) => !!data.managerName || employeeArray.length > 0
+    },
 ]
 
 // Write code to use inquirer to gather information about the development team members,
