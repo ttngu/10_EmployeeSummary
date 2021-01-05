@@ -73,7 +73,7 @@ const questions = [
         type: "input",
         message: "What is the name of the intern's school?",
         name: "internSchool",
-        when: (data) => data.newMember === "Intern" && when1(data)
+        when: (data) => data.newMember === "Intern" && when2(data)
     },
 ]
 
