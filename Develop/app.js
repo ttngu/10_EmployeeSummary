@@ -51,6 +51,24 @@ const questions = [
         name: "employeeName",
         when: when2
     },
+    {
+        type: "input",
+        message: "What is the employee's ID?",
+        name: "employeeID",
+        when: when2
+    },
+    {
+        type: "input",
+        message: "What is the employee's email?",
+        name: "employeeEmail",
+        when: when2
+    },
+    {
+        type: "input",
+        message: "What is the employee's Github?",
+        name: "engineerGithub",
+        when: (data) => data.newMember === "Engineer" && secondWhen(data)
+    },
 ]
 
 // Write code to use inquirer to gather information about the development team members,
