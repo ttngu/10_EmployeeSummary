@@ -26,6 +26,8 @@ npm i
   <br>
 
   ## Usage
+  ![Alt Text](https://github.com/ttngu/03Homework/blob/master/Assets/PassGenButton.png?raw=true)
+    
   After running 'npm i' enter 'app.js' into the command line. The user will then be prompted to enter the manager information, then select which team member they would like to add.
   <br>
   <br>
