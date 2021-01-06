@@ -3,6 +3,8 @@
 
   ## Description
   This is a software engineering team generator command line application. The user will be prompted for information about the team manager, engineers, and interns. When the user has completed added team members, an HTML file will be created, displaying a team roster with the inputed information.
+
+  A video recording demo can be found here: https://github.com/ttngu/10_EmployeeSummary/blob/main/Assets/Screen%20Recording%20.mov
   <br>
   <br>
 
@@ -26,8 +28,8 @@ npm i
   <br>
 
   ## Usage
-  ![Alt Text](https://github.com/ttngu/03Homework/blob/master/Assets/PassGenButton.png?raw=true)
-    
+  ![Alt Text](https://github.com/ttngu/10_EmployeeSummary/blob/main/Assets/ScreenCap.png)
+
   After running 'npm i' enter 'app.js' into the command line. The user will then be prompted to enter the manager information, then select which team member they would like to add.
   <br>
   <br>
