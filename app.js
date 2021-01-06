@@ -39,6 +39,12 @@ const questions = [
         when: when1
     },
     {
+        type: "input",
+        message: "What is your email?",
+        name: "managerEmail",
+        when: when1
+    },
+    {
         type: "list",
         message: "Who would you like to add?",
         name: "newMember",
