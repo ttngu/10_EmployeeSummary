@@ -14,7 +14,7 @@ const Employee = require("./lib/Employee");
 // Array of all employees
 let employeeArray = [];
 const when1 = (data) => !!data.managerName && employeeArray.length < 1;
-const when2 = (data) => !!data.managerName || (employeeArray.length > 0)
+const when2 = (data) => !!data.managerName || (employeeArray.length > 0) && (data.newMember !== "None")
 
 
 // Create Questions
@@ -103,7 +103,7 @@ async function createTeam() {
         const teamHTML = render(employeeArray);
         fs.writeFile(outputPath, teamHTML, function(error) {
             if (error) throw error;
-            console.log("done and done!");
+            console.log("Your employees have been added!");
         });
     }
 
